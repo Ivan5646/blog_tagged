@@ -7,6 +7,11 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
+
+<p>
+  Tags:
+  <%=raw tag_links(@article.tag_list) %>
+</p>
  
 <h2>Comments</h2>
 <%= render @article.comments %>
